@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">05:53</span>
@@ -40,25 +40,41 @@
         </div>
     </header>
 
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">2019년 12월 6일 금요일</span>
             <li class="incoming-message message">
                 <img src="img/blank-user-img.jpg" alt="" class="m-avatar message__avatar">
                 <div class="message__content">
                     <span class="message__author">Best Friend</span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Congrats I love you!
-                    </div>
+                    </span>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <span class="message__timestamp"></span>
                 <div class="message__content">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Thank you see you soon!
-                    </div>
+                    </span>
+                </div>
+            </li>
+            <li class="incoming-message message">
+                <img src="img/blank-user-img.jpg" alt="" class="m-avatar message__avatar">
+                <div class="message__content">
+                    <span class="message__author">Best Friend</span>
+                    <span class="message__bubble">
+                        Congrats I love you!
+                    </span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <span class="message__timestamp"></span>
+                <div class="message__content">
+                    <span class="message__bubble">
+                        Thank you see you soon!
+                    </span>
                 </div>
             </li>
         </ul>
