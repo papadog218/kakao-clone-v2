@@ -53,7 +53,7 @@
     animation-delay: 0.5s;
 }
 .nav__list-item:hover i {
-    animation: 1s navItemHover ease-in-out infinite;
+    animation: 1s navItemHover ease-in-out;
 }
 .nav__list-item:hover .nav__badge {
     animation: .5s vibrationBadge ease-in-out infinite;
@@ -74,11 +74,14 @@
 @keyframes vibrationBadge {
     0% {
         transform: scale(1);
+        font-size: 12px;
     }
     50% {
         transform: scale(1.2);
+        font-size: 16px;
     }
     100% {
         transform: scale(1);
+        font-size: 12px;
     }
 }
