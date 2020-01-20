@@ -34,6 +34,7 @@
     align-items: center;
     border-radius: 50%;
     font-size: 12px;
+    z-index: 2;
 }
 
 @keyframes showNav {
@@ -50,4 +51,34 @@
     transform: translateY(80px);
     animation: showNav 0.5s ease-out forwards;
     animation-delay: 0.5s;
+}
+.nav__list-item:hover i {
+    animation: 1s navItemHover ease-in-out infinite;
+}
+.nav__list-item:hover .nav__badge {
+    animation: .5s vibrationBadge ease-in-out infinite;
+}
+
+@keyframes navItemHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: rotateY(-180deg) scale(2);
+    }
+    100% {
+        transform: rotateY(-360deg) scale(1);
+    }
+}
+
+@keyframes vibrationBadge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
