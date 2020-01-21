@@ -41,7 +41,6 @@
     from {
         transform: translateY(80px);
     }
-
     to {
         transform: none;
     }
@@ -53,9 +52,11 @@
     animation-delay: 0.5s;
 }
 .nav__list-item:hover i {
+    color: #DC5D46;
     animation: 1s navItemHover ease-in-out;
 }
 .nav__list-item:hover .nav__badge {
+    background-color: #020202;
     animation: .5s vibrationBadge ease-in-out infinite;
 }
 

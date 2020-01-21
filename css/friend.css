@@ -63,10 +63,21 @@
     font-size: 12px;
 }
 
-/* 별도 숙제 */
+/*********************** 별도 숙제 **************/
+body.niko_homework {
+    padding: 0;
+}
+.niko_homework .wrap {
+    padding: 10px 20px;
+    box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.chats .friend {
+    padding: 10px 20px;
+    transition: border 0.5s;
+}
 .avatar_three, .avatar_four {
     width: 60px;
-    /* border: 1px solid orangered; */
     margin-right: 15px;
 }
 .friend .avatar_three {
@@ -94,6 +105,11 @@
     margin: 0 !important;
     padding: 0 !important;
     border: 1px solid #fff;
+}
+.chats__chat.chat:hover .friend {
+    /* background-color: #999; */
+    border: 2px solid #fce006;
+    border-radius: 10px;
 }
 .friend:hover .solo {
     animation: 1s rotateImg_pore ease-in-out infinite;
